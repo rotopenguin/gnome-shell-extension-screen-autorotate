@@ -83,9 +83,9 @@ class ManualOrientationMenuToggle extends QuickMenuToggle {
 
       this.connect('clicked', () => {
         if (this.checked === true) {
-            ext.rotate_to('right-up');
+            ext.rotate_to('left-up'); // this little guy really needs to be put into a setting. 
         } else {
-            ext.rotate_to('normal');
+            ext.rotate_to('normal'); // this too
         }
       });
     }
